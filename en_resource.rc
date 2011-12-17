@@ -1,0 +1,808 @@
+/*
+en_resource.rc   English language resource for AviUtl0.99
+
+Copyright (c) 2011 Oka Motofumi (chikuzen.mo at gmail dot com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+#include <winresrc.h>
+
+STRINGTABLE 
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+{
+    0    "English"
+    1    "English for ver0.99"
+    10   "Default"
+    11   "Automatic"
+    12   "None"
+    13   " sec."
+    14   " min."
+    15   " hr."
+    16   "Deinterlace"
+    17   "Odd"
+    18   "Even"
+    19   "Blend"
+    21   "Automatic"
+    22   "Automatic IVTC"
+    23   "Standerd"
+    24   "Permute"
+    25   "Cycle"
+    26   "Unkown"
+    27   "Writing..."
+    28   "Calcurating..."
+    29   "Retrieving..."
+    30   "Remaining"
+    31   "Recompress unavailable"
+    32   "Uncompressed"
+    33   "Unchanged fps"
+    34   "Resolution"
+    35   "Film length"
+    36   "Framerate"
+    37   "Total frames"
+    38   "Video codec"
+    39   "Samplerate"
+    40   "Channels"
+    41   "Audio codec"
+    42   "Strength"
+    43   "Range"
+    44   "Threshold"
+    45   "Minimum"
+    46   "Maximum"
+    49   "Top"
+    50   "Bottom"
+    51   "Left"
+    52   "Right"
+    53   "Brightness"
+    54   "Contrast"
+    55   "Luma"
+    56   "Gamma"
+    57   "Saturation"
+    58   "Hue"
+    59   "Level"
+    60   "Normalization"
+    61   "Blur"
+    62   "Crop and Resize(average area)"
+    63   "Keep aspect ratio"
+    64   "Keep original size"
+    66   "Tweak"
+    67   "TweakEx"
+    68   "TV -> PC scale"
+    69   "RGB lock"
+    73   "Histogram"
+    74   "Deinterlace"
+    75   "Automatic IVTC"
+    76   "Dot based deinterlace"
+    77   "Display image"
+    78   "Automatic deinterlace"
+    79   "Motion-based"
+    80   "Adaptive blend"
+    81   "Odd/Even field"
+    82   "Positional interpolation"
+    83   "Compatible interpolation"
+    84   "Interleave"
+    85   "0.5 second"
+    86   "1 second"
+    87   "2 second"
+    88   "1 frame"
+    89   "2 frames"
+    90   "5 frames"
+    91   "10 frames"
+    92   "Custom"
+    93   "Navigator window"
+    94   "Noise reduction"
+    95   "Noise reduction(temporal)"
+    96   "Playback window"
+    97   "Change FPS"
+    98   "Set FPS"
+    99   "30fps->24fps invoke automatic IVTC"
+    100  "Resize"
+    101  "Custom"
+    102  "Sharpen"
+    105  "Sequential BMP File (*.bmp)|*.bmp"
+    106  "Tool Window"
+    107  " "
+    108  " "
+    109  "Field order"
+    110  "Bottom field first"
+    111  "Top field first"
+    112  "File control"
+    113  "Color Space"
+    114  "Volume"
+    115  "Delay"
+    116  "Position"
+    122  "Border control"
+    123  "Fill black"
+    124  "Extend the border"
+    125  "PC -> TV scale"
+    128  "Arrange in the center"
+    1000 "Cannot open this file"
+    1001 "Cannot save this file"
+    1002 "Cannot create this file"
+    1003 "Unsupported format"
+    1004 "Cannot find the specific file\nAssign another file?"
+    1005 "Maximum number available for input files is %d"
+    1006 "Cannot edit video with resolution over %dx%d"
+    1007 "Cannot edit video with resolution under %dx%d"
+    1008 "Maximum number available for total frames is %d"
+    1009 "Recompressed frames exists. Continue?\n\n *frame %d%s"
+    1010 "Maximum number available for batch processing is %d"
+    1011 "incorrect picture format"
+    1012 "incorrect resolution"
+    1013 "breaks due to keyframe"
+    1014 "read as 60fps"
+    1015 "Cannot write to open file"
+    1016 "Failed to initialize video codec"
+    1017 "Failed to initialize audio codec"
+    1018 "Abort?"
+    1019 "Abort?"
+    1020 "None"
+    1021 "Disabled"
+    1022 "Don't use these characters in profile's name\n\n%s"
+    1023 "Cannot write to input file"
+    1024 "Maximum number available for concatenate is %d"
+    1025 "Cannot recompress and possibly output an abnormal file. Continue?"
+    1026 "Cannot find the output plugin"
+    1028 "File information"
+    1029 "Filter plugins information"
+    1030 "Input plugins information"
+    1031 "Output plugins information"
+    1032 "Directshow Overlay information"
+    1033 "Version"
+    1034 "Language"
+    1035 "Out of memory"
+    1036 "File corrupted in batch processing"
+    1037 "Make sure to delete all?"
+    1038 "Failed to open file. possibility of unsupported format"
+}
+
+
+AVIUTL MENU
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+{
+    POPUP "File"
+    {
+        MENUITEM "Open(Ctrl+O)", 5097
+        MENUITEM "Close", 5157
+        MENUITEM "Append", 5100
+        MENUITEM "Open audio", 5168
+        MENUITEM SEPARATOR
+        MENUITEM "Load project", 5118
+        MENUITEM "Save project", 1023
+        MENUITEM SEPARATOR
+        MENUITEM "Save as AVI (Ctrl+S)", 1003
+        MENUITEM "Save as WAV", 1062
+        POPUP "Output with plugins"
+        {
+            MENUITEM "", 5395
+        }
+        MENUITEM "Batch processing", 1025
+        MENUITEM "Abort (Esc)", 1009
+        MENUITEM SEPARATOR
+        POPUP "Import"
+        {
+            MENUITEM "Keyframe list", 5167
+            MENUITEM "", 14000
+        }
+        POPUP "Export"
+        {
+            MENUITEM "Key frame list", 1054
+            MENUITEM "", 15000
+        }
+        POPUP "AVI file operation"
+        {
+            MENUITEM "Concatenate", 1057
+            MENUITEM "Multiplex/Remultiplex", 1058
+        }
+        MENUITEM SEPARATOR
+        POPUP "General settings"
+        {
+            POPUP "Process priority"
+            {
+                MENUITEM "Highest", 1041
+                MENUITEM "High", 1040
+                MENUITEM "Normal", 1039
+                MENUITEM "Low", 1038
+                MENUITEM "Lowest", 1037
+            }
+            MENUITEM SEPARATOR
+            MENUITEM "System", 108
+            MENUITEM "Codecs", 109
+            MENUITEM "Priority of input plugins", 1086
+            MENUITEM "Keyboad shortcuts", 102
+            MENUITEM "Language", 106
+        }
+        MENUITEM SEPARATOR
+        MENUITEM "Exit", 1002
+    }
+    POPUP "Filters"
+    {
+        MENUITEM "", 10000
+        MENUITEM SEPARATOR
+        MENUITEM "", 10999
+        MENUITEM SEPARATOR
+        MENUITEM "Disable all filters", 5183
+    }
+    POPUP "Settings"
+    {
+        MENUITEM "", 11000
+        MENUITEM SEPARATOR
+        MENUITEM "", 11999
+        MENUITEM SEPARATOR
+        MENUITEM "", 11998
+        MENUITEM SEPARATOR
+        POPUP "Compression"
+        {
+            MENUITEM "Video", 5127
+            MENUITEM "Audio", 5128
+        }
+        POPUP "Filters priority"
+        {
+            MENUITEM "Video", 5139
+            MENUITEM "Audio", 5181
+        }
+    }
+    POPUP "Edit"
+    {
+        MENUITEM "Copy current frame (Ctrl+C)", 1020
+        MENUITEM "Pate to current frame (Ctrl+V)", 5117
+        MENUITEM "Copy current frame to clipboad", 1026
+        MENUITEM "Paste to current frame from clipboad", 5123
+        MENUITEM "Copy worked frame to clipboad", 1070
+        MENUITEM "Go to specific frame (Ctrl+G)", 5131
+        MENUITEM "Select processing range", 5115
+        MENUITEM "Paste selection range", 5184
+        MENUITEM "Delete selection range", 5101
+        MENUITEM "Recover current frame (Ctrl+Z)", 5147
+        MENUITEM "Select all frames (Ctrl+A)", 5112
+        MENUITEM SEPARATOR
+        MENUITEM "New profile for selection range", 5109
+        MENUITEM "Compression codec for selection range", 5126
+        MENUITEM "Deinterlace for selection range", 5125
+        POPUP "Deinterlace for current frame"
+        {
+            MENUITEM "None (0(numberpad))", 5196
+            MENUITEM "Permute (1(numberpad))", 5197
+            MENUITEM "Odd (2(numberpad))", 5198
+            MENUITEM "Even (3(numberpad))", 5199
+            MENUITEM "Blend (4(numberpad))", 5200
+            MENUITEM "Auto (5(numberpad))", 5201
+        }
+        POPUP "Profile for current frame"
+        {
+            MENUITEM "Standerd (0)", 5206
+            MENUITEM "Profile[1] (1)", 5207
+            MENUITEM "Profile[2] (2)", 5208
+            MENUITEM "Profile[3] (3)", 5209
+            MENUITEM "Profile[4] (4)", 5210
+            MENUITEM "Profile[5] (5)", 5211
+            MENUITEM "Profile[6] (6)", 5212
+            MENUITEM "Profile[7] (7)", 5213
+            MENUITEM "Profile[8] (8)", 5214
+            MENUITEM "Profile[9] (9)", 5215
+        }
+        MENUITEM SEPARATOR
+        MENUITEM "Set current frame as keyframe", 5129
+        MENUITEM "Delete current frame priorly", 5132
+        MENUITEM "Mark current frame", 5130
+        MENUITEM "Set current frame as copy frame", 5156
+        MENUITEM SEPARATOR
+        POPUP "Basic function"
+        {
+            MENUITEM "Move to next frame (right)", 9002
+            MENUITEM "Move to previous frame (left)", 9001
+            MENUITEM "Move to next undeleted frame (down)", 5142
+            MENUITEM "Move to previous undeleted frame (up)", 5141
+            MENUITEM "Set selection start ([)", 5110
+            MENUITEM "Set selection end (])", 5111
+            MENUITEM "Move to first frame (Home)", 5396
+            MENUITEM "Move to last frame (End)", 5397
+            MENUITEM "Move to selection start", 5103
+            MENUITEM "Move to selection end", 5104
+            MENUITEM "Move to next keyframe", 5174
+            MENUITEM "Move to previous keyframe", 5175
+            MENUITEM "Move to next markframe", 5178
+            MENUITEM "Move to previous markframe", 5179
+            MENUITEM "Move to next frame with different profile", 5176
+            MENUITEM "Move to previous frame with different profile", 5177
+            MENUITEM "Move to next A frame (PageDown)", 5187
+            MENUITEM "Move to previous A frame (PageUp)", 5188
+            MENUITEM "Move to next B frame", 5189
+            MENUITEM "Move to previous B frame", 5190
+            MENUITEM "Move to next C frame", 5191
+            MENUITEM "Move to previous C frame", 5192
+            MENUITEM "Move to next D frame", 5193
+            MENUITEM "Move to previous D frame", 5194
+        }
+    }
+    POPUP "Profile"
+    {
+        MENUITEM "", 8005
+        MENUITEM SEPARATOR
+        POPUP "Edit profile"
+        {
+            MENUITEM "Create new profile", 8001
+            MENUITEM "Delete current profile", 8002
+            MENUITEM "Reset current profile", 8000
+        }
+    }
+    POPUP "Display"
+    {
+        POPUP "Zoom in/out"
+        {
+            MENUITEM "25%", 9200
+            MENUITEM "50%", 9201
+            MENUITEM "100%", 9202
+            MENUITEM "200%", 9203
+            MENUITEM "300%", 9204
+            MENUITEM "400%", 9205
+            MENUITEM SEPARATOR
+            MENUITEM "Zoom in(+(numberpad))", 9107
+            MENUITEM "Zoom out(-(numberpad))", 9108
+        }
+        MENUITEM "Waveform", 9104
+        MENUITEM "Timecode", 9114
+        MENUITEM "Display when saving", 9105
+        MENUITEM "Expectable delete frame", 9106
+        MENUITEM "Expectable recompress frame", 9110
+        MENUITEM "Keyframe of source video", 9109
+        MENUITEM SEPARATOR
+        MENUITEM "", 10998
+        MENUITEM SEPARATOR
+        MENUITEM "Always on top", 9113
+        MENUITEM "Enable Directshow Overlay", 9111
+        MENUITEM "Disable filter temporarily", 5144
+    }
+    POPUP "Help"
+    {
+        MENUITEM "File information", 1006
+        MENUITEM "Directshow Overlay information", 104
+        MENUITEM "Filter plugins information", 101
+        MENUITEM "Input plugins information", 103
+        MENUITEM "Output plugins information", 105
+        MENUITEM "Language Support", 107
+        MENUITEM SEPARATOR
+        MENUITEM "About", 100
+    }
+}
+
+
+CONTEXT MENU
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+{
+    POPUP "context"
+    {
+        POPUP "Resolution"
+        {
+            MENUITEM "25%", 9200
+            MENUITEM "50%", 9201
+            MENUITEM "100%", 9202
+            MENUITEM "200%", 9203
+            MENUITEM "300%", 9204
+            MENUITEM "400%", 9205
+        }
+        MENUITEM SEPARATOR
+        MENUITEM "Copy current frame", 1020
+        MENUITEM "Paste to current frame", 5117
+        MENUITEM "Copy current frame to clipboad", 1026
+        MENUITEM "Paste to current frame from clipboad", 5123
+        MENUITEM "Copy worked frame to clipboad", 1070
+        MENUITEM "Delete selection range", 5101
+        MENUITEM "Recover current frame", 5147
+        MENUITEM "Select all frame", 5112
+        MENUITEM SEPARATOR
+        MENUITEM "Mark current frame", 5130
+    }
+}
+
+CONTEXT2 MENU
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+{
+    POPUP "context"
+    {
+        MENUITEM "Filter on/off", 13000
+        MENUITEM "Load default setting", 13001
+    }
+}
+
+CONTEXT3 MENU
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+{
+    POPUP "context"
+    {
+        MENUITEM "Copy current frame", 1020
+        MENUITEM "Paste to current frame", 5117
+        MENUITEM "Copy current frame to clipboad", 1026
+        MENUITEM "Paste to current frame from clipboad", 5123
+        MENUITEM "Delete selection range", 5101
+        MENUITEM "Recover current frame", 5147
+        MENUITEM "Select all frame", 5112
+        MENUITEM "Swictch selection range", 5152
+        MENUITEM SEPARATOR
+        MENUITEM "Mark current frame", 5130
+    }
+}
+
+CONTEXT4 MENU
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+{
+    POPUP "context"
+    {
+        MENUITEM "Play/Suspend", 105
+        MENUITEM "Stop", 101
+        MENUITEM SEPARATOR
+        MENUITEM "Repeat", 103
+        MENUITEM SEPARATOR
+        POPUP "Resolution"
+        {
+            MENUITEM "50%", 110
+            MENUITEM "100%", 111
+            MENUITEM "200%", 112
+            MENUITEM "640x480", 113
+            MENUITEM "320x240", 114
+            MENUITEM "160x120", 115
+            MENUITEM "WindowSize", 116
+        }
+    }
+}
+
+PLAY MENU
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+{
+    POPUP "Play"
+    {
+        MENUITEM "Play/Suspend", 105
+        MENUITEM "Stop", 101
+        MENUITEM SEPARATOR
+        MENUITEM "Repeat", 103
+    }
+    POPUP "Display"
+    {
+        POPUP "Resolution"
+        {
+            MENUITEM "50%", 110
+            MENUITEM "100%", 111
+            MENUITEM "200%", 112
+            MENUITEM "640x480", 113
+            MENUITEM "320x240", 114
+            MENUITEM "160x120", 115
+            MENUITEM "WindowSize", 116
+        }
+        MENUITEM SEPARATOR
+        MENUITEM "Disable video filter", 104
+        MENUITEM "Enable Directshow Overlay", 106
+    }
+}
+
+
+AVICHAIN DIALOG 0, 0, 288, 300
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Concatenate AVI files"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 9, "Arial"
+{
+ CONTROL "Add", 32703, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 228, 20, 52, 14
+ CONTROL "Add sequense", 32707, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 228, 36, 52, 14
+ CONTROL "Delete", 32704, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 228, 52, 52, 14
+ CONTROL "Delete all", 32700, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 228, 68, 52, 14
+ CONTROL "OK", 1, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 228, 88, 52, 14
+ CONTROL "Cancel", 2, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 228, 104, 52, 14
+ CONTROL "Output file", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 202, 40, 8
+ CONTROL "", 32104, "EDIT", ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 42, 200, 202, 12, WS_EX_CLIENTEDGE
+ CONTROL "Browse", 32304, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 248, 199, 32, 14
+ CONTROL "Title:", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 12, 222, 28, 8
+ CONTROL "", 32100, "EDIT", ES_LEFT | ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 12, 230, 128, 44, WS_EX_CLIENTEDGE
+ CONTROL "Comment:", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 144, 222, 35, 8
+ CONTROL "", 32101, "EDIT", ES_LEFT | ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 144, 230, 128, 44, WS_EX_CLIENTEDGE
+ CONTROL "Copyright:", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 280, 36, 8
+ CONTROL "", 32102, "EDIT", ES_LEFT | ES_AUTOHSCROLL | ES_WANTRETURN | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 40, 278, 235, 12, WS_EX_CLIENTEDGE
+ CONTROL "Input files", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 8, 40, 8
+ CONTROL "Concatenate", 32600, "LISTBOX", LBS_HASSTRINGS | LBS_DISABLENOSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 8, 18, 212, 172
+}
+
+AVIMIX DIALOG 0, 0, 288, 164
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Multiplex AVI files"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 9, "Arial"
+{
+ CONTROL "OK", 1, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 172, 66, 52, 14
+ CONTROL "Cancel", 2, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 228, 66, 52, 14
+ CONTROL "Video source", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 10, 44, 8
+ CONTROL "Audio source", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 26, 44, 8
+ CONTROL "Output file", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 46, 44, 8
+ CONTROL "", 32105, "EDIT", ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 52, 8, 192, 12, WS_EX_CLIENTEDGE
+ CONTROL "", 32106, "EDIT", ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 52, 24, 192, 12, WS_EX_CLIENTEDGE
+ CONTROL "", 32104, "EDIT", ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 52, 44, 192, 12, WS_EX_CLIENTEDGE
+ CONTROL "Browse", 32305, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 248, 7, 32, 14
+ CONTROL "Browse", 32306, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 248, 23, 32, 14
+ CONTROL "Browse", 32304, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 248, 43, 32, 14
+ CONTROL "Title:", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 12, 84, 28, 8
+ CONTROL "", 32100, "EDIT", ES_LEFT | ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 12, 92, 128, 44, WS_EX_CLIENTEDGE
+ CONTROL "Comment:", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 144, 84, 35, 8
+ CONTROL "", 32101, "EDIT", ES_LEFT | ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 144, 92, 128, 44, WS_EX_CLIENTEDGE
+ CONTROL "Copyright:", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 142, 32, 8
+ CONTROL "", 32102, "EDIT", ES_LEFT | ES_AUTOHSCROLL | ES_WANTRETURN | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 42, 140, 234, 12, WS_EX_CLIENTEDGE
+}
+
+BATCH DIALOG 0, 0, 256, 206
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Batch processing"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 9, "Arial"
+{
+ CONTROL "Close", 32713, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 208, 184, 40, 14
+ CONTROL "Process list", 32600, "LISTBOX", LBS_HASSTRINGS | LBS_DISABLENOSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 8, 8, 192, 172
+ CONTROL "Up", 32701, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 208, 8, 40, 14
+ CONTROL "Down", 32702, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 208, 24, 40, 14
+ CONTROL "Append", 32709, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 208, 48, 40, 14
+ CONTROL "Delete", 32704, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 208, 64, 40, 14
+ CONTROL "Delete all", 32700, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 208, 80, 40, 14
+ CONTROL "Modify", 32300, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 208, 104, 40, 14
+ CONTROL "Start", 32710, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 208, 136, 40, 14
+ CONTROL "Stop", 32711, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 208, 152, 40, 14
+ CONTROL "Shutdown computer after batch processing completed", 32200, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 186, 185, 12
+}
+
+INTER DIALOG 0, 0, 128, 56
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Deinterlace"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 9, "Arial"
+{
+ CONTROL "OK", 1, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 32, 52, 14
+ CONTROL "Cancel", 2, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 68, 32, 52, 14
+ CONTROL "", 32500, "COMBOBOX", CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 8, 112, 128
+}
+
+KEYCFGLIST DIALOG 0, 0, 272, 260
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Keyboad shortcuts"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 9, "Arial"
+{
+ CONTROL "OK", 1, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 208, 220, 52, 14
+ CONTROL "Cancel", 2, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 208, 236, 52, 14
+ CONTROL "Shortcut list", 32600, "LISTBOX", LBS_NOTIFY | LBS_HASSTRINGS | LBS_DISABLENOSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 8, 8, 192, 244
+ CONTROL "Key list", 32601, "LISTBOX", LBS_NOTIFY | LBS_DISABLENOSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 208, 8, 56, 160
+ CONTROL "Shift", 32200, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 208, 164, 28, 12
+ CONTROL "Ctrl", 32201, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 240, 164, 24, 12
+ CONTROL "Alt", 32202, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 208, 176, 24, 12
+ CONTROL "Default", 32700, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 208, 196, 52, 14
+}
+
+LANG DIALOG 0, 0, 128, 80
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Language"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 9, "Arial"
+{
+ CONTROL "OK", 1, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 32, 52, 14
+ CONTROL "Cancel", 2, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 68, 32, 52, 14
+ CONTROL "", 32500, "COMBOBOX", CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 8, 8, 112, 128
+ CONTROL "* Remember to restart AviUtl", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 16, 55, 96, 16
+}
+
+LOAD_OPTION DIALOG 0, 0, 280, 68
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 9, "Arial"
+{
+ CONTROL "", 1119, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 0, 280, 32
+ CONTROL "Read as 60fps", 32200, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 36, 56, 12
+ CONTROL "Modify fps", 32202, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 76, 36, 36, 12
+ CONTROL "Read AVI sequense", 32201, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 48, 64, 12
+ CONTROL "Framerate", 32500, "COMBOBOX", CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL, 226, 46, 52, 128
+ CONTROL "Read selection range", 32203, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 76, 48, 76, 12
+}
+
+MOVE DIALOG 0, 0, 74, 30
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Frame number"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 9, "Arial"
+{
+ CONTROL "", 32000, "EDIT", ES_LEFT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 8, 8, 58, 12
+}
+
+PRIORITYLIST DIALOG 0, 0, 128, 226
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Process priority"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 9, "Arial"
+{
+ CONTROL "OK", 1, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 204, 52, 14
+ CONTROL "Cancel", 2, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 68, 204, 52, 14
+ CONTROL "Priority", 32600, "LISTBOX", LBS_HASSTRINGS | LBS_DISABLENOSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 8, 8, 112, 172
+ CONTROL "Up", 32701, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 184, 36, 14
+ CONTROL "Down", 32702, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 48, 184, 36, 14
+ CONTROL "Reset", 32700, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 88, 184, 32, 14
+}
+
+SAVE_OPTION DIALOG 0, 0, 280, 188
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 9, "Arial"
+{
+ CONTROL "", 1119, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 0, 280, 32
+ CONTROL "", 32406, "STATIC", SS_LEFT | SS_CENTERIMAGE | SS_SUNKEN | WS_CHILD | WS_VISIBLE, 14, 33, 205, 12
+ CONTROL "Batch append", 32302, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 227, 32, 50, 14
+ CONTROL "Video codec", 32300, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 12, 52, 52, 16
+ CONTROL "", 32400, "STATIC", SS_LEFTNOWORDWRAP | WS_CHILD | WS_VISIBLE, 72, 56, 148, 10
+ CONTROL "", -1, "STATIC", SS_ETCHEDFRAME | WS_CHILD | WS_VISIBLE, 68, 52, 156, 16
+ CONTROL "Audio codec", 32301, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 12, 72, 52, 16
+ CONTROL "", 32401, "STATIC", SS_LEFTNOWORDWRAP | WS_CHILD | WS_VISIBLE, 72, 76, 148, 10
+ CONTROL "", -1, "STATIC", SS_ETCHEDFRAME | WS_CHILD | WS_VISIBLE, 68, 72, 156, 16
+ CONTROL "No recompress", 32200, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 228, 54, 60, 12
+ CONTROL "No recompress", 32203, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 228, 70, 60, 10
+ CONTROL "No audio", 32201, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 228, 80, 40, 10
+ CONTROL "Title:", 32402, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 12, 92, 28, 8
+ CONTROL "", 32100, "EDIT", ES_LEFT | ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 12, 100, 128, 44, WS_EX_CLIENTEDGE
+ CONTROL "Comment:", 32403, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 144, 92, 36, 8
+ CONTROL "", 32101, "EDIT", ES_LEFT | ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 144, 100, 128, 44, WS_EX_CLIENTEDGE
+ CONTROL "Copyright:", 32404, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 150, 36, 8
+ CONTROL "", 32102, "EDIT", ES_LEFT | ES_AUTOHSCROLL | ES_WANTRETURN | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 44, 148, 228, 12, WS_EX_CLIENTEDGE
+ CONTROL "Save WAV", 32204, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 12, 166, 60, 12
+ CONTROL "Create log", 32202, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 72, 166, 60, 12
+ CONTROL "Interleave every", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 170, 168, 48, 8
+ CONTROL "1", 32000, "EDIT", ES_LEFT | ES_AUTOHSCROLL | ES_WANTRETURN | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 220, 166, 12, 12, WS_EX_RIGHT | WS_EX_CLIENTEDGE
+ CONTROL "frame", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 234, 168, 40, 8
+}
+
+SELECT DIALOG 0, 0, 136, 72
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Select processing range"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 9, "Arial"
+{
+ CONTROL "OK", 1, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 12, 48, 52, 14
+ CONTROL "Cancel", 2, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 72, 48, 52, 14
+ CONTROL "Start frame number", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 12, 12, 56, 12
+ CONTROL "", 32000, "EDIT", ES_LEFT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 72, 10, 52, 12
+ CONTROL "End frame number", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 12, 28, 56, 8
+ CONTROL "", 32001, "EDIT", ES_LEFT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 72, 26, 52, 12
+}
+
+SIZE DIALOG 0, 0, 128, 56
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Custom size"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 9, "Arial"
+{
+ CONTROL "OK", 1, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 32, 52, 14
+ CONTROL "Cancel", 2, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 68, 32, 52, 14
+ CONTROL "width", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 12, 6, 28, 8
+ CONTROL "", 32000, "EDIT", ES_LEFT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 12, 16, 36, 12
+ CONTROL "height", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 68, 6, 28, 8
+ CONTROL "", 32001, "EDIT", ES_LEFT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 68, 16, 36, 12
+}
+
+STRINGS DIALOG 0, 0, 272, 30
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Name of profile"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 9, "Arial"
+{
+ CONTROL "", 32100, "EDIT", ES_LEFT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 8, 8, 256, 12
+}
+
+VCMSET DIALOG 0, 0, 204, 96
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Video compression"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 9, "Arial"
+{
+ CONTROL "Video codec:", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 8, 52, 8
+ CONTROL "ComboBox1", 32500, "COMBOBOX", CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 8, 19, 128, 128
+ CONTROL "Quality (0~100)", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 9, 43, 64, 8
+ CONTROL "", 32000, "EDIT", ES_LEFT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 73, 40, 24, 12, WS_EX_CLIENTEDGE
+ CONTROL "Keyframe (0:None)", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 9, 59, 64, 8
+ CONTROL "", 32001, "EDIT", ES_LEFT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 73, 56, 24, 12, WS_EX_CLIENTEDGE
+ CONTROL "Frames", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 98, 59, 40, 8
+ CONTROL "Average bitrate (0:None)", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 9, 75, 52, 8
+ CONTROL "", 32002, "EDIT", ES_LEFT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 73, 72, 24, 12, WS_EX_CLIENTEDGE
+ CONTROL "KB/s", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 98, 75, 24, 8
+ CONTROL "OK", 1, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 144, 8, 50, 14
+ CONTROL "Cancel", 2, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 144, 24, 50, 14
+ CONTROL "Configure", 32300, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 144, 40, 50, 14
+ CONTROL "Default", 32301, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 144, 56, 50, 14
+ CONTROL "Version", 32302, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 144, 72, 50, 14
+}
+
+INPUTLIST DIALOG 0, 0, 158, 226
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Priority of input plugins"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 9, "Arial"
+{
+ CONTROL "OK", 1, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 204, 48, 14
+ CONTROL "Cancel", 2, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 64, 204, 48, 14
+ CONTROL "Priority", 32600, "LISTBOX", LBS_NOTIFY | LBS_HASSTRINGS | LBS_DISABLENOSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 8, 8, 140, 172
+ CONTROL "Up", 32701, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 184, 32, 14
+ CONTROL "Down", 32702, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 44, 184, 32, 14
+ CONTROL "Reset", 32700, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 80, 184, 32, 14
+ CONTROL "Config", 32708, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 116, 184, 32, 14
+}
+
+SYSTEM DIALOG 0, 0, 258, 296
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Ststem configuration"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 9, "Arial"
+{
+ CONTROL "OK", 1, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 76, 272, 48, 14
+ CONTROL "Cancel", 2, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 136, 272, 48, 14
+ CONTROL "Max resolution", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 8, 52, 8
+ CONTROL "width", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 74, 8, 16, 8
+ CONTROL "", 32000, "EDIT", ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 92, 5, 48, 12, WS_EX_CLIENTEDGE
+ CONTROL "height", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 143, 8, 20, 8
+ CONTROL "", 32001, "EDIT", ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 165, 5, 48, 12, WS_EX_CLIENTEDGE
+ CONTROL "Max frame count", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 20, 52, 8
+ CONTROL "", 32002, "EDIT", ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 92, 17, 48, 12, WS_EX_CLIENTEDGE
+ CONTROL "Frame cache", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 32, 64, 8
+ CONTROL "", 32003, "EDIT", ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 92, 29, 48, 12, WS_EX_CLIENTEDGE
+ CONTROL "Frame jump at will", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 44, 64, 8
+ CONTROL "A", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 85, 44, 8, 8
+ CONTROL "", 32005, "EDIT", ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 92, 41, 32, 12, WS_EX_CLIENTEDGE
+ CONTROL "B", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 126, 44, 8, 8
+ CONTROL "", 32006, "EDIT", ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 133, 41, 32, 12, WS_EX_CLIENTEDGE
+ CONTROL "C", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 168, 44, 8, 8
+ CONTROL "", 32007, "EDIT", ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 175, 41, 32, 12, WS_EX_CLIENTEDGE
+ CONTROL "D", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 209, 44, 8, 8
+ CONTROL "", 32008, "EDIT", ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 216, 41, 32, 12, WS_EX_CLIENTEDGE
+ CONTROL "Keep codec and plugin setting", 32202, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 56, 148, 12
+ CONTROL "Save codec setting in profile", 32201, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 68, 120, 12
+ CONTROL "Frame number start from 1", 32203, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 80, 116, 12
+ CONTROL "Select region when move frames by pressing SHIFT key", 32204, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 92, 208, 12
+ CONTROL "YUY2 filter mode (* may disable all filter plugins)", 32205, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 104, 192, 12
+ CONTROL "* Remember to restart AviUtl after change setting", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 120, 184, 8
+ CONTROL "", -1, "STATIC", SS_ETCHEDFRAME | WS_CHILD | WS_VISIBLE, 4, 134, 248, 1
+ CONTROL "Default format of output file", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 144, 84, 8
+ CONTROL "", 32101, "EDIT", ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 92, 141, 130, 12, WS_EX_CLIENTEDGE
+ CONTROL "Browse", 32301, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 225, 141, 28, 12
+ CONTROL "Completed Sound", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 156, 68, 8
+ CONTROL "", 32102, "EDIT", ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 92, 153, 130, 12, WS_EX_CLIENTEDGE
+ CONTROL "Browse", 32302, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 225, 153, 28, 12
+ CONTROL "Enable SSE", 32206, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 168, 60, 12
+ CONTROL "Enable SSE2", 32207, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 68, 168, 60, 12
+ CONTROL "Register VFAPI plugin (aviutl.vfp)", 32208, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 180, 150, 12
+ CONTROL "Rescale YUV to TV level when convert to YUY2", 32214, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 192, 168, 12
+ CONTROL "Resume last work", 32209, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 204, 100, 12
+ CONTROL "Append video with unchanged framerate", 32210, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 216, 144, 12
+ CONTROL "Open video with temporary profile", 32211, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 228, 192, 12
+ CONTROL "Set framerate to 29.97fps while framerate is closed to 29.97fps", 32212, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 240, 220, 12
+ CONTROL "Modify framerate while Audio/Video skew is beyond 0.1 second", 32213, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 252, 244, 12
+}
+
+CODEC DIALOG 0, 0, 144, 106
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Codec configuration"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+FONT 9, "Arial"
+{
+ CONTROL "OK", 1, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 16, 84, 50, 14
+ CONTROL "Cancel", 2, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 80, 84, 50, 14
+ CONTROL "Codec:", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 8, 52, 8
+ CONTROL "ComboBox1", 32500, "COMBOBOX", CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 8, 19, 128, 128
+ CONTROL "YUY2 extension", 32200, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 40, 76, 12
+ CONTROL "YUY2 compression", 32201, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 52, 76, 12
+ CONTROL "Preserve codec setting", 32202, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 64, 76, 12
+}
+
+
