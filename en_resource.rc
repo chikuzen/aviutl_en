@@ -264,7 +264,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
         //    {
         //        MENUITEM SEPARATOR
         //    }
-            MENUITEM "input plugins", 1086
+            MENUITEM "Input plugins", 1086
             MENUITEM "Keyboad shortcuts", 102
             MENUITEM "Language", 106
             MENUITEM SEPARATOR
