@@ -79,7 +79,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
     59   "Level"
     60   "Normalize"
     61   "Blur"
-    62   "Crop and Resize(average area)"
+    62   "Crop and Resize (average area)"
     63   "Keep aspect ratio"
     64   "Keep original size"
     66   "Color tweak"
@@ -145,7 +145,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
     138  "[Output]"
     139  "Append"
     140  "Open audio"
-    141  "Open project"
+    141  "Load project"
     142  "Save project"
     143  "Save AVI"
     144  "Save WAV"
@@ -182,7 +182,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
     1029 "Filter plugins information"
     1030 "Input plugins information"
     1031 "Output plugins information"
-    1032 "Directshow Overlay information"
+    1032 "Overlay information"
     1033 "Version"
     1034 "Language"
     1035 "Out of memory"
@@ -194,7 +194,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
     1041 "All process has finished"
     1042 "Processing %s ..."
     1043 "Waiting other process"
-    1044 "Color convert plugins information"
+    1044 "Color conversion plugins information"
     1045 "Keyboad shortcuts conflict\n\n%s\n%s\n"
     1045 "All edit process will lost. Make sure?"
 }
@@ -265,10 +265,10 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
         //        MENUITEM SEPARATOR
         //    }
             MENUITEM "Input plugins", 1086
-            MENUITEM "Keyboad shortcuts", 102
+            MENUITEM "Keyboard shortcuts", 102
             MENUITEM "Language", 106
             MENUITEM SEPARATOR
-            MENUITEM "Reset all position of windows", 111
+            MENUITEM "Reset all window positions", 111
         }
         MENUITEM SEPARATOR
         MENUITEM "Exit", 1002
@@ -305,10 +305,10 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
     POPUP "Edit"
     {
         MENUITEM "Copy current frame (Ctrl+C)", 1020
-        MENUITEM "Pate to current frame (Ctrl+V)", 5117
-        MENUITEM "Copy current frame to clipboad", 1026
-        MENUITEM "Paste to current frame from clipboad", 5123
-        MENUITEM "Copy worked frame to clipboad", 1070
+        MENUITEM "Paste to current frame (Ctrl+V)", 5117
+        MENUITEM "Copy current frame to clipboard", 1026
+        MENUITEM "Paste to current frame from clipboard", 5123
+        MENUITEM "Copy worked frame to clipboard", 1070
         MENUITEM "Go to specific frame (Ctrl+G)", 5131
         MENUITEM "Select processing range", 5115
         MENUITEM "Paste selection range", 5184
@@ -323,12 +323,12 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
         MENUITEM "Deinterlace for selection range", 5125
         POPUP "Deinterlace for current frame"
         {
-            MENUITEM "None (0(numberpad))", 5196
-            MENUITEM "Permute (1(numberpad))", 5197
-            MENUITEM "Bottom field (2(numberpad))", 5198
-            MENUITEM "Top field (3(numberpad))", 5199
-            MENUITEM "Blend (4(numberpad))", 5200
-            MENUITEM "Auto (5(numberpad))", 5201
+            MENUITEM "None (0(numpad))", 5196
+            MENUITEM "Permute (1(numpad))", 5197
+            MENUITEM "Bottom field (2(numpad))", 5198
+            MENUITEM "Top field (3(numpad))", 5199
+            MENUITEM "Blend (4(numpad))", 5200
+            MENUITEM "Auto (5(numpad))", 5201
         }
         POPUP "Profile for current frame"
         {
@@ -351,7 +351,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
         MENUITEM SEPARATOR
         MENUITEM "Change play speed", 5398
         MENUITEM SEPARATOR
-        POPUP "Basic function"
+        POPUP "Basic functions"
         {
             MENUITEM "Move to next frame (right)", 9002
             MENUITEM "Move to previous frame (left)", 9001
@@ -378,7 +378,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
             MENUITEM "Move to next D frame", 5193
             MENUITEM "Move to previous D frame", 5194
             MENUITEM "Start playback at current frame", 1099
-            MENUITEM "Copy current frame number to clipboad", 1090
+            MENUITEM "Copy current frame number to clipboard", 1090
         }
     }
     POPUP "Profile"
@@ -394,7 +394,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
     }
     POPUP "Display"
     {
-        POPUP "Zoom in/out"
+        POPUP "Zoom"
         {
             MENUITEM "25%", 9200
             MENUITEM "50%", 9201
@@ -402,7 +402,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
             MENUITEM "200%", 9203
             MENUITEM "300%", 9204
             MENUITEM "400%", 9205
-            MENUITEM "WindowSize", 9206
+            MENUITEM "Window size", 9206
             MENUITEM SEPARATOR
             MENUITEM "Zoom in(+(numberpad))", 9107
             MENUITEM "Zoom out(-(numberpad))", 9108
@@ -418,18 +418,18 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
         MENUITEM "", 10998
         MENUITEM SEPARATOR
         MENUITEM "Always on top", 9113
-        MENUITEM "Enable Directshow Overlay", 9111
+        MENUITEM "Enable Overlay", 9111
         MENUITEM "Disable filters temporarily", 5144
     }
     POPUP "Help"
     {
         MENUITEM "File information", 1006
-        MENUITEM "Directshow Overlay information", 104
+        MENUITEM "Overlay information", 104
         MENUITEM "Filter plugins information", 101
         MENUITEM "Input plugins information", 103
         MENUITEM "Output plugins information", 105
-        MENUITEM "Color convert plugins information", 110
-        MENUITEM "Language Support", 107
+        MENUITEM "Color conversion plugins information", 110
+        MENUITEM "Language support", 107
         MENUITEM SEPARATOR
         MENUITEM "About", 100
     }
@@ -448,14 +448,14 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
             MENUITEM "200%", 9203
             MENUITEM "300%", 9204
             MENUITEM "400%", 9205
-            MENUITEM "WindowSize", 9206
+            MENUITEM "Window size", 9206
         }
         MENUITEM SEPARATOR
         MENUITEM "Copy current frame", 1020
         MENUITEM "Paste to current frame", 5117
-        MENUITEM "Copy current frame to clipboad", 1026
-        MENUITEM "Paste to current frame from clipboad", 5123
-        MENUITEM "Copy worked frame to clipboad", 1070
+        MENUITEM "Copy current frame to clipboard", 1026
+        MENUITEM "Paste to current frame from clipboard", 5123
+        MENUITEM "Copy worked frame to clipboard", 1070
         MENUITEM "Trim selection range", 5143
         MENUITEM "Delete selection range", 5101
         MENUITEM SEPARATOR
@@ -472,7 +472,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
     POPUP "context"
     {
         MENUITEM "Filter on/off", 13000
-        MENUITEM "Load default setting", 13001
+        MENUITEM "Load default settings", 13001
     }
 }
 
@@ -483,8 +483,8 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
     {
         MENUITEM "Copy current frame", 1020
         MENUITEM "Paste to current frame", 5117
-        MENUITEM "Copy current frame to clipboad", 1026
-        MENUITEM "Paste to current frame from clipboad", 5123
+        MENUITEM "Copy current frame to clipboard", 1026
+        MENUITEM "Paste to current frame from clipboard", 5123
         MENUITEM "Delete selection range", 5101
         MENUITEM "Recover current frame", 5147
         MENUITEM "Select all frame", 5112
@@ -573,7 +573,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
         }
         MENUITEM SEPARATOR
         MENUITEM "Disable video filters", 104
-        MENUITEM "Enable Directshow Overlay", 106
+        MENUITEM "Enable Overlay", 106
     }
 }
 
@@ -669,14 +669,14 @@ FONT 9, "Arial"
     CONTROL "", 32400, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 144, 10, 104, 18 , WS_EX_CLIENTEDGE
     CONTROL "YUY2 extension", 32200, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 144, 32, 76, 12
     CONTROL "YUY2 compression", 32201, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 144, 46, 76, 12
-    CONTROL "Preserve codec setting", 32202, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 144, 60, 90, 12
+    CONTROL "Preserve codecs settings", 32202, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 144, 60, 90, 12
 }
 
 
 
 EXOUT DIALOG 0, 0, 198, 62
 STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Output plugins setting"
+CAPTION "Output plugins settings"
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 FONT 9, "Arial"
 {
@@ -906,7 +906,7 @@ FONT 9, "Arial"
 
 SYSTEM DIALOG 0, 0, 258, 408
 STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Ststem configuration"
+CAPTION "System configuration"
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 FONT 9, "Arial"
 {
@@ -921,15 +921,15 @@ FONT 9, "Arial"
     CONTROL "", 32002, "EDIT", ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 92, 17, 48, 12, WS_EX_CLIENTEDGE
     CONTROL "Frame cache", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 32, 64, 8
     CONTROL "", 32003, "EDIT", ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 92, 29, 48, 12, WS_EX_CLIENTEDGE
-    CONTROL "Resolution list for resize", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 44, 84, 8
+    CONTROL "Resize selector options", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 44, 84, 8
     CONTROL "", 32103, "EDIT", ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 92, 41, 156, 12 , WS_EX_CLIENTEDGE
-    CONTROL "Keep codec and plugin setting", 32202, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 56, 148, 12
-    CONTROL "Save codec setting in profile", 32201, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 68, 120, 12
+    CONTROL "Keep codec and plugin settings", 32202, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 56, 148, 12
+    CONTROL "Save codec settings in profile", 32201, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 68, 120, 12
     CONTROL "Frame number start from 1", 32203, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 80, 116, 12
     CONTROL "Select region when move frames by pressing SHIFT key", 32204, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 92, 208, 12
     CONTROL "YUY2 filter mode (* may disable all filter plugins)", 32205, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 104, 192, 12
     CONTROL "Enable LargeAddressAware", 32216, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 116, 168, 12
-    CONTROL "* Remember to restart AviUtl after change setting", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 131, 184, 8
+    CONTROL "* Remember to restart AviUtl after change settings", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 131, 184, 8
     CONTROL "", -1, "STATIC", SS_ETCHEDFRAME | WS_CHILD | WS_VISIBLE, 4, 145, 248, 2
     CONTROL "Frame jump at will", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 154, 64, 8
     CONTROL "A", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 85, 154, 8, 8
@@ -940,12 +940,12 @@ FONT 9, "Arial"
     CONTROL "", 32007, "EDIT", ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 175, 151, 32, 12, WS_EX_CLIENTEDGE
     CONTROL "D", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 209, 154, 8, 8
     CONTROL "", 32008, "EDIT", ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 216, 151, 32, 12, WS_EX_CLIENTEDGE
-    CONTROL "Framerate list when read video", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 166, 84, 8
+    CONTROL "Open dialog frame fates", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 166, 84, 8
     CONTROL "", 32104, "EDIT", ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 92, 163, 156, 12 , WS_EX_CLIENTEDGE
     CONTROL "Default format of output file", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 178, 84, 8
     CONTROL "", 32101, "EDIT", ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 92, 175, 136, 12, WS_EX_CLIENTEDGE
     CONTROL "Browse", 32301, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 225, 175, 28, 12
-    CONTROL "Completed Sound", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 190, 68, 8
+    CONTROL "Sound on completion", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 190, 68, 8
     CONTROL "", 32102, "EDIT", ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 92, 187, 136, 12, WS_EX_CLIENTEDGE
     CONTROL "Browse", 32302, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 225, 187, 28, 12
     CONTROL "Thread number (0=auto)", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 202, 100, 8
@@ -959,15 +959,15 @@ FONT 9, "Arial"
     CONTROL "Register VFAPI plugin (aviutl.vfp)", 32208, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 238, 150, 12
     CONTROL "Open *.aup as project file when [Open] the file", 32219, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 250, 188, 12
     CONTROL "Rescale YUV to TV level when convert to YUY2", 32214, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 262, 168, 12
-    CONTROL "Resume last work", 32209, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 274, 100, 12
-    CONTROL "Do not confirm when overwrite a file", 32215, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 286, 136, 12
-    CONTROL "Display select dialog when drag and drop", 32218, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 298, 188, 12
-    CONTROL "Confirm when close a file", 32220, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 310, 172, 12
+    CONTROL "Resume last job", 32209, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 274, 100, 12
+    CONTROL "Do not confirm when overwriting a file", 32215, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 286, 136, 12
+    CONTROL "Display selection dialog when drag and drop", 32218, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 298, 188, 12
+    CONTROL "Confirm when closing a file", 32220, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 310, 172, 12
     CONTROL "Append video with unchanged framerate", 32210, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 322, 144, 12
     CONTROL "Open video with temporary profile", 32211, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 334, 192, 12
     CONTROL "Set framerate to 29.97fps while framerate is closed to 29.97fps", 32212, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 346, 220, 12
-    CONTROL "Modify framerate while Audio/Video skew is beyond 0.1 second", 32213, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 358, 244, 12
-    CONTROL "Use current profile when load project file", 32221, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 370, 184, 12
+    CONTROL "Adjust framerate when audio/video gap is over 0.1 second", 32213, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 358, 244, 12
+    CONTROL "Use current profile when loading project file", 32221, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 370, 184, 12
 }
 
 
@@ -999,7 +999,7 @@ FONT 9, "Arial"
 
 WAV_OPTION DIALOG 0, 0, 188, 55
 STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "WaveFileReader setting"
+CAPTION "WaveFileReader settings"
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 FONT 9, "Arial"
 {
