@@ -205,7 +205,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
     POPUP "File"
     {
-        MENUITEM "Open(Ctrl+O)", 5097
+        MENUITEM "Open (Ctrl+O)", 5097
         MENUITEM "Close", 5157
         MENUITEM "Append", 5100
         MENUITEM "Open audio", 5168
@@ -230,13 +230,13 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
         }
         POPUP "Export"
         {
-            MENUITEM "Key frame list", 1054
+            MENUITEM "Keyframe list", 1054
             MENUITEM "", 15000
         }
         POPUP "AVI file operation"
         {
             MENUITEM "Concatenate", 1057
-            MENUITEM "Multiplex/Remultiplex", 1058
+            MENUITEM "Multiplex", 1058
         }
         POPUP "File history"
         {
@@ -404,8 +404,8 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
             MENUITEM "400%", 9205
             MENUITEM "Window size", 9206
             MENUITEM SEPARATOR
-            MENUITEM "Zoom in(+(numberpad))", 9107
-            MENUITEM "Zoom out(-(numberpad))", 9108
+            MENUITEM "Zoom in (+(numberpad))", 9107
+            MENUITEM "Zoom out (-(numberpad))", 9108
         }
         MENUITEM "Waveform", 9104
         MENUITEM "Timecode", 9114
@@ -515,7 +515,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
             MENUITEM "640x480", 113
             MENUITEM "320x240", 114
             MENUITEM "160x120", 115
-            MENUITEM "WindowSize", 116
+            MENUITEM "Window size", 116
         }
     }
 }
@@ -567,13 +567,13 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
             MENUITEM "640x480", 113
             MENUITEM "320x240", 114
             MENUITEM "160x120", 115
-            MENUITEM "WindowSize", 116
+            MENUITEM "Window size", 116
             MENUITEM SEPARATOR
             MENUITEM "Maximize", 109
         }
         MENUITEM SEPARATOR
         MENUITEM "Disable video filters", 104
-        MENUITEM "Enable Overlay", 106
+        MENUITEM "Enable Directshow Overlay", 106
     }
 }
 
