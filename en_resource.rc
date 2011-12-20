@@ -929,7 +929,7 @@ FONT 10, "Tahoma"
     CONTROL "Select region when moving frames by pressing SHIFT key", 32204, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 92, 208, 10
     CONTROL "YUY2 filter mode (* may disable all filter plugins)", 32205, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 104, 192, 10
     CONTROL "Enable LargeAddressAware", 32216, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 116, 168, 10
-    CONTROL "* Remember to restart AviUtl after change settings", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 131, 184, 8
+    CONTROL "* Remember to restart AviUtl after change these settings", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 131, 200, 8
     CONTROL "", -1, "STATIC", SS_ETCHEDFRAME | WS_CHILD | WS_VISIBLE, 6, 145, 249, 2
     CONTROL "Frame jump at will", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 154, 64, 8
     CONTROL "A", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 92, 154, 8, 8
@@ -958,7 +958,7 @@ FONT 10, "Tahoma"
     CONTROL "Enable SSE2", 32207, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 68, 226, 60, 10
     CONTROL "Register VFAPI plugin (aviutl.vfp)", 32208, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 238, 150, 10
     CONTROL "Open *.aup as project file when [Open] the file", 32219, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 250, 188, 10
-    CONTROL "Rescale YUV to TV level when convert to YUY2", 32214, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 262, 168, 10
+    CONTROL "Saturate YUV value to TV-scale when convert to YUY2", 32214, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 262, 200, 10
     CONTROL "Resume last job", 32209, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 274, 100, 10
     CONTROL "Do not confirm when overwriting file", 32215, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 286, 136, 10
     CONTROL "Display selection dialog on drag and drop", 32218, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 298, 188, 10
