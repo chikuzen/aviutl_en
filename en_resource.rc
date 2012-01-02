@@ -29,7 +29,7 @@ STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
     0    "English"
-    1    "English for ver0.99j"
+    1    "English for ver0.99k"
     10   "Default"
     11   "Automatic"
     12   "None"
@@ -196,7 +196,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
     1043 "Waiting other process"
     1044 "Color conversion plugins information"
     1045 "Keyboad shortcuts conflict\n\n%s\n%s\n"
-    1045 "All edit process will lost. Make sure?"
+    1046 "All edit process will lost. Make sure?"
 }
 
 
@@ -260,11 +260,11 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
             MENUITEM SEPARATOR
             MENUITEM "System", 108
             MENUITEM "Codecs", 109
-        //    POPUP "Input plugins configure"
-        //    {
-        //        MENUITEM SEPARATOR
-        //    }
-            MENUITEM "Input plugins", 1086
+            POPUP "Input plugins configure"
+            {
+                MENUITEM "", 5595
+            }
+            MENUITEM "Input plugins priority", 1086
             MENUITEM "Keyboard shortcuts", 102
             MENUITEM "Language", 106
             MENUITEM SEPARATOR
@@ -448,7 +448,6 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
             MENUITEM "200%", 9203
             MENUITEM "300%", 9204
             MENUITEM "400%", 9205
-            MENUITEM "Window size", 9206
         }
         MENUITEM SEPARATOR
         MENUITEM "Copy current frame", 1020
@@ -509,6 +508,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
         MENUITEM SEPARATOR
         POPUP "Resolution"
         {
+            MENUITEM "25%", 117
             MENUITEM "50%", 110
             MENUITEM "100%", 111
             MENUITEM "200%", 112
@@ -516,6 +516,8 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
             MENUITEM "320x240", 114
             MENUITEM "160x120", 115
             MENUITEM "Window size", 116
+            MENUITEM SEPARATOR
+            MENUITEM "Maximize", 109
         }
     }
 }
@@ -904,14 +906,14 @@ FONT 9, "Ariel"
 
 
 
-SYSTEM DIALOG 0, 0, 261, 408
+SYSTEM DIALOG 0, 0, 261, 420
 STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
 CAPTION "System configuration"
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 FONT 10, "Tahoma"
 {
-    CONTROL "OK", 1, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 76, 386, 48, 14
-    CONTROL "Cancel", 2, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 138, 386, 48, 14
+    CONTROL "OK", 1, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 76, 398, 48, 14
+    CONTROL "Cancel", 2, "BUTTON", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 138, 398, 48, 14
     CONTROL "Max resolution", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 8, 52, 8
     CONTROL "width", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 92, 8, 17, 8
     CONTROL "", 32000, "EDIT", ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 110, 7, 40, 10, WS_EX_CLIENTEDGE
@@ -968,6 +970,7 @@ FONT 10, "Tahoma"
     CONTROL "Set framerate to 29.97fps while framerate is closed to 29.97fps", 32212, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 346, 220, 10
     CONTROL "Adjust framerate when audio/video gap is over 0.1 second", 32213, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 358, 244, 10
     CONTROL "Use current profile when loading project file", 32221, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 370, 184, 10
+    CONTROL "Snap related windows", 32222, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 382, 128, 10
 }
 
 
