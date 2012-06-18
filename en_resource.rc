@@ -1,5 +1,5 @@
 /*
-en_resource.rc   English language resource for AviUtl0.99l
+en_resource.rc   English language resource for AviUtl0.99m
 
 Copyright (c) 2011-2012 Oka Motofumi (chikuzen.mo at gmail dot com)
 
@@ -406,6 +406,8 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
             MENUITEM SEPARATOR
             MENUITEM "Zoom in (+(numpad))", 9107
             MENUITEM "Zoom out (-(numpad))", 9108
+            MENUITEM SEPARATOR
+            MENUITEM "Automaic adjustment", 9116
         }
         MENUITEM "Waveform", 9104
         MENUITEM "Timecode", 9114
@@ -973,6 +975,7 @@ FONT 10, "Tahoma"
     CONTROL "Adjust framerate when audio/video gap is over 0.1 second", 32213, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 272, 116, 244, 10
     CONTROL "Use current profile when loading project file", 32221, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 272, 126, 184, 10
     CONTROL "Snap related windows", 32222, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 272, 136, 128, 10
+    CONTROL "Jump directly to the position clicked with the track bar.", 32225, "BUTTON", BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 272, 146, 210, 10
 }
 
 
